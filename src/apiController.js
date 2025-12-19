@@ -1,4 +1,5 @@
 import { API_KEY } from './config';
+import { capitalizeFirstLetter } from '../utils/utils';
 
 export async function getDataFromAPI(cityName) {
   const response = await fetch(
@@ -11,6 +12,7 @@ export async function getDataFromAPI(cityName) {
 
 function cleanDataFromAPI(JSON_data) {
   const cityData = {};
+  cityData['city'] = capitalizeFirstLetter(JSON_data.resolvedAddress);
   cityData['current_temperature'] =
     Math.round(parseFahrToCelsius(JSON_data.currentConditions.temp) * 10) / 10;
   cityData['current_feelsLike'] =

@@ -1,13 +1,13 @@
 import '../styles/general-styles.css';
 
-import { renderMain } from './view';
+import { renderMain } from './renderMain';
+import { renderCityWeather } from './renderCityWeather';
 import { getDataFromAPI } from './apiController';
 
-renderMain();
-
-async function createDataObject() {
-  const cityData = await getDataFromAPI('buenos aires');
+async function main() {
+  const cityData = await getDataFromAPI('sydney');
   console.log(cityData);
+  renderCityWeather(cityData['city']);
 }
 
-createDataObject();
+main();
