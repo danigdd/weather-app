@@ -6,8 +6,8 @@ import { getDataFromAPI } from './apiController';
 renderMain();
 
 async function createDataObject() {
-  const cityData = await getDataFromAPI('washington');
-  console.log(cityData['current_temperature']);
+  const cityData = await getDataFromAPI('buenos aires');
+  console.log(cityData);
 }
 
 createDataObject();

@@ -11,6 +11,17 @@ export async function getDataFromAPI(cityName) {
 
 function cleanDataFromAPI(JSON_data) {
   const cityData = {};
-  cityData['current_temperature'] = JSON_data.currentConditions.temp;
+  cityData['current_temperature'] =
+    Math.round(parseFahrToCelsius(JSON_data.currentConditions.temp) * 10) / 10;
+  cityData['current_feelsLike'] =
+    Math.round(parseFahrToCelsius(JSON_data.currentConditions.feelslike) * 10) /
+    10;
+  cityData['current_precibprob'] = JSON_data.currentConditions.precipprob;
+  cityData['current_conditions'] = JSON_data.currentConditions.conditions;
+  cityData['icon'] = JSON_data.currentConditions.icon;
   return cityData;
+}
+
+function parseFahrToCelsius(temperature) {
+  return (temperature - 32) * (5 / 9);
 }
