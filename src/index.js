@@ -7,7 +7,7 @@ import { getDataFromAPI } from './apiController';
 async function main() {
   const cityData = await getDataFromAPI('sydney');
   console.log(cityData);
-  renderCityWeather(cityData['city']);
+  renderCityWeather(cityData);
 }
 
 main();
