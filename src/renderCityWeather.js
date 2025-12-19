@@ -13,21 +13,31 @@ export function renderCityWeather(cityData) {
   root.appendChild(titleDOM);
 
   // TEMPERATURE WRAPPER
-  const temperatureWrapper = document.createElement('div');
-  temperatureWrapper.id = 'temperatureWrapper_id';
-  root.appendChild(temperatureWrapper);
+  const temperatureWrapperDOM = document.createElement('div');
+  temperatureWrapperDOM.id = 'temperatureWrapper_id';
+  root.appendChild(temperatureWrapperDOM);
 
   // IMAGE OF TEMPERATURE
-  const temperatureImg = document.createElement('img');
-  temperatureImg.id = 'temperatureImg_id';
-  temperatureImg.src = sun;
-  temperatureWrapper.appendChild(temperatureImg);
+  const temperatureImgDOM = document.createElement('img');
+  temperatureImgDOM.id = 'temperatureImg_id';
+  temperatureImgDOM.src = sun;
+  temperatureWrapperDOM.appendChild(temperatureImgDOM);
 
   // CURRENT TEMPERATURE
-  const temperatureLabel = document.createElement('label');
-  temperatureLabel.id = 'temperatureLabel_id';
-  temperatureLabel.textContent = cityData['current_temperature'] + '°C';
-  temperatureWrapper.appendChild(temperatureLabel);
+  const temperatureLabelDOM = document.createElement('label');
+  temperatureLabelDOM.id = 'temperatureLabel_id';
+  temperatureLabelDOM.textContent = cityData['current_temperature'] + '°C';
+  temperatureWrapperDOM.appendChild(temperatureLabelDOM);
 
-  return;
+  // CONDITIONS DESCRIPTION
+  const conditionsDescDOM = document.createElement('div');
+  conditionsDescDOM.id = 'conditionsDesc_id';
+  conditionsDescDOM.textContent = `${cityData['current_conditions']}`;
+  root.appendChild(conditionsDescDOM);
+
+  // FEELS LIKE
+  const feelsLikeDOM = document.createElement('div');
+  feelsLikeDOM.id = 'feelsLike_id';
+  feelsLikeDOM.textContent = 'Feels like ' + `${cityData['current_feelsLike']}`;
+  root.appendChild(feelsLikeDOM);
 }
