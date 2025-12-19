@@ -41,4 +41,10 @@ export function renderCityWeather(cityData) {
   feelsLikeDOM.id = 'feelsLike_id';
   feelsLikeDOM.textContent = 'Feels like ' + `${cityData['current_feelsLike']}`;
   root.appendChild(feelsLikeDOM);
+
+  // SEARCH AGAIN BUTTON
+  const searchAgainDOM = document.createElement('button');
+  searchAgainDOM.id = 'searchAgain_id';
+  searchAgainDOM.textContent = 'Search another city';
+  root.appendChild(searchAgainDOM);
 }
