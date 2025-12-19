@@ -21,7 +21,7 @@ body {
   justify-content: center;
   width: 80%;
   height: 45%;
-  padding: 80px 20px;
+  padding: 80px 40px;
   border-radius: 15px;
   background-color: var(--color-bg-card);
 }

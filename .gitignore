@@ -44,3 +44,5 @@ Thumbs.db
 # Generated files
 *.tgz
 *.lock
+
+config.js
