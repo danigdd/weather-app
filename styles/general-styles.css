@@ -1,14 +1,27 @@
 @import './colors.css';
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Stack+Sans+Headline:wght@200..700&display=swap');
+
+* {
+  margin: 0;
+  font-family: 'Manrope', sans-serif;
+  font-style: normal;
+}
 body {
   background-color: var(--color-bg-main);
+  display: flex;
+  height: 100vh;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 #content {
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: center;
-  width: 70%;
-  height: 50%;
+  width: 80%;
+  height: 45%;
+  padding: 80px 20px;
+  border-radius: 15px;
   background-color: var(--color-bg-card);
 }

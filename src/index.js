@@ -1,7 +1,7 @@
 import '../styles/general-styles.css';
 
-import { render } from './view';
+import { renderMain } from './view';
 
 console.log('hi');
-render();
+renderMain();
 console.log('bye');

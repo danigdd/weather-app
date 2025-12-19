@@ -1,11 +1,14 @@
 import '../styles/general-styles.css';
+import '../styles/mainPage-styles.css';
 const root = document.getElementById('content');
-export function render() {
+export function renderMain() {
   root.innerHTML = '';
 
-  const paragraph = document.createElement('div');
-  paragraph.textContent = 'HI how a re u';
+  // TITLE
+  const titleDOM = document.createElement('div');
+  titleDOM.id = 'titleDOM_id';
+  titleDOM.textContent = 'Your weather in a click.';
+  root.appendChild(titleDOM);
 
-  root.appendChild(paragraph);
   return;
 }
