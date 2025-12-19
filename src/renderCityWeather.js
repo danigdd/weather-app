@@ -1,6 +1,8 @@
 import '../styles/general-styles.css';
 import '../styles/citypage-styles.css';
-import sun from '../resources/sun.svg';
+
+import { createTemperatureImg } from './setWeatherController';
+
 const root = document.getElementById('content');
 
 export function renderCityWeather(cityData) {
@@ -18,9 +20,8 @@ export function renderCityWeather(cityData) {
   root.appendChild(temperatureWrapperDOM);
 
   // IMAGE OF TEMPERATURE
-  const temperatureImgDOM = document.createElement('img');
+  const temperatureImgDOM = createTemperatureImg(cityData['icon']);
   temperatureImgDOM.id = 'temperatureImg_id';
-  temperatureImgDOM.src = sun;
   temperatureWrapperDOM.appendChild(temperatureImgDOM);
 
   // CURRENT TEMPERATURE

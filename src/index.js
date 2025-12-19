@@ -5,7 +5,7 @@ import { renderCityWeather } from './renderCityWeather';
 import { getDataFromAPI } from './apiController';
 
 async function main() {
-  const cityData = await getDataFromAPI('sydney');
+  const cityData = await getDataFromAPI('lleifda');
   console.log(cityData);
   renderCityWeather(cityData);
 }
