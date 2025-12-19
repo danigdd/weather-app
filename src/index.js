@@ -12,7 +12,7 @@ async function main() {
 
   // RENDER MAIN
   searchAgainDOM.addEventListener('click', () => {
-    console.log('hi');
+    renderMain();
   });
 }
 

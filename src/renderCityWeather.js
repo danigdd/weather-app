@@ -7,6 +7,9 @@ const root = document.getElementById('content');
 
 export function renderCityWeather(cityData) {
   root.innerHTML = '';
+  root.style.animation = 'none';
+  void root.offsetWidth;
+  root.style.animation = 'fadeUp 1s ease-out';
 
   // TITLE
   const titleDOM = document.createElement('div');
