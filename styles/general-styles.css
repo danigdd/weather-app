@@ -1,0 +1,14 @@
+@import './colors.css';
+body {
+  background-color: var(--color-bg-main);
+}
+
+#content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  height: 50%;
+  background-color: var(--color-bg-card);
+}

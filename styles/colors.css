@@ -1,0 +1,24 @@
+:root {
+  /* BACKGROUND AND STRUCTURE */
+
+  --color-bg-main: #0d1117;
+  --color-bg-card: #161b22;
+  --color-bg-border: #21262d;
+
+  /* TEXT */
+
+  --color-text-primary: #c9d1d9;
+  --color-text-secondary: #8b949e;
+
+  /* CLIMA AND WEATHER */
+
+  --color-weather-hot: #ffb86c;
+  --color-weather-cold: #82aaff;
+  --color-weather-rain: #5fd3ff;
+  --color-weather-cloudy: #a6adc8;
+  --color-weather-storm: #ff5555;
+
+  /* UI EFFECTS */
+
+  --color-shadow-strong: rgba(0, 0, 0, 0.6);
+}
