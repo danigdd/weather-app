@@ -45,9 +45,17 @@ export function renderCityWeather(cityData) {
   feelsLikeDOM.textContent = 'Feels like ' + `${cityData['current_feelsLike']}`;
   root.appendChild(feelsLikeDOM);
 
-  // SEARCH AGAIN BUTTON
-  const searchAgainDOM = document.createElement('button');
-  searchAgainDOM.id = 'searchAgain_id';
-  searchAgainDOM.textContent = 'Search another city';
-  root.appendChild(searchAgainDOM);
+  // SEARCH BAR
+  const searchBarWrapperDOM = document.createElement('div');
+  searchBarWrapperDOM.id = 'searchBarWrapper_id';
+  root.appendChild(searchBarWrapperDOM);
+
+  const textAreaDOM = document.createElement('input');
+  textAreaDOM.id = 'textArea_id';
+  textAreaDOM.placeholder = 'Search for a city...';
+  searchBarWrapperDOM.appendChild(textAreaDOM);
+
+  const searchButtonDOM = document.createElement('button');
+  searchButtonDOM.id = 'searchButton_id';
+  searchBarWrapperDOM.appendChild(searchButtonDOM);
 }
