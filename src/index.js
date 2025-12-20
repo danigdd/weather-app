@@ -10,6 +10,7 @@ async function city(city_name) {
   if (cityData == -1) {
     console.log('what');
     pageNotFound(city_name);
+    return;
   }
   renderCityWeather(cityData);
   const searchDOM = document.getElementById('searchButton_id');
