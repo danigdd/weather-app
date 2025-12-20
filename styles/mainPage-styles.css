@@ -3,7 +3,7 @@
 @keyframes fadeUp {
   from {
     opacity: 0;
-    transform: translateY(80px);
+    transform: translateY(20px);
   }
   to {
     opacity: 1;
@@ -21,4 +21,32 @@
   color: var(--color-text-primary);
   font-size: 60px;
   font-weight: 700;
+}
+
+#searchBarWrapper_id {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 40px;
+  width: 80%;
+}
+
+#textArea_id {
+  color: var(--color-text-primary);
+  width: 93%;
+  height: 60px;
+  text-align: start;
+  resize: none;
+  overflow: hidden;
+  white-space: nowrap;
+  border: none;
+  background-color: var(--color-bg-main);
+}
+
+#searchButton_id {
+  width: 7%;
+  height: 65px;
+}
+#searchButton_id:hover {
+  cursor: pointer;
 }
