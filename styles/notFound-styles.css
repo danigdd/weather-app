@@ -1,0 +1,63 @@
+@import './colors.css';
+
+#content {
+  animation-name: fadeUp;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+}
+
+#titleDOM_id {
+  color: var(--color-text-primary);
+  font-size: 60px;
+  font-weight: 700;
+}
+
+#searchBarWrapper_id {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 100px;
+  width: 80%;
+}
+
+#textArea_id {
+  color: var(--color-text-primary);
+  width: 93%;
+  height: 60px;
+  text-align: start;
+  resize: none;
+  overflow: hidden;
+  white-space: nowrap;
+  border: none;
+  background-color: var(--color-bg-main);
+  border-radius: 8px 0px 0px 8px;
+  min-height: 0;
+  padding: 0px 20px 0px 20px;
+  font-size: 20px;
+}
+
+#textArea_id:focus {
+  outline: none !important;
+}
+
+#searchButton_id {
+  min-width: 60px;
+  width: 7%;
+  height: 60px;
+  border-radius: 0px 8px 8px 0px;
+  outline: none !important;
+  border: none;
+  background-color: rgba(117, 16, 117, 1);
+  background-image: url('../resources/lupa.png');
+  background-size: 30px 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 0.2s;
+}
+#searchButton_id:hover {
+  cursor: pointer;
+  background-color: rgba(117, 16, 117, 0.7);
+}
