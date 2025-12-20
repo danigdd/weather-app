@@ -10,7 +10,7 @@ export async function getDataFromAPI(cityName) {
     const cityData = cleanDataFromAPI(cityJSON_data);
     return cityData;
   } catch (error) {
-    console.log('ERROR');
+    console.log(`ERROR: ${error}`);
     return -1;
   }
 }

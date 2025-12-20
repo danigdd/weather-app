@@ -41,12 +41,31 @@
   white-space: nowrap;
   border: none;
   background-color: var(--color-bg-main);
+  border-radius: 8px 0px 0px 8px;
+  min-height: 0;
+  padding: 0px 20px 0px 20px;
+  font-size: 20px;
+}
+
+#textArea_id:focus {
+  outline: none !important;
 }
 
 #searchButton_id {
+  min-width: 60px;
   width: 7%;
-  height: 65px;
+  height: 60px;
+  border-radius: 0px 8px 8px 0px;
+  outline: none !important;
+  border: none;
+  background-color: rgba(117, 16, 117, 1);
+  background-image: url('../resources/lupa.png');
+  background-size: 30px 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 0.2s;
 }
 #searchButton_id:hover {
   cursor: pointer;
+  background-color: rgba(117, 16, 117, 0.7);
 }

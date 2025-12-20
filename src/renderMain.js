@@ -18,7 +18,7 @@ export function renderMain() {
   searchBarWrapperDOM.id = 'searchBarWrapper_id';
   root.appendChild(searchBarWrapperDOM);
 
-  const textAreaDOM = document.createElement('textarea');
+  const textAreaDOM = document.createElement('input');
   textAreaDOM.id = 'textArea_id';
   textAreaDOM.placeholder = 'Search for a city...';
   searchBarWrapperDOM.appendChild(textAreaDOM);
