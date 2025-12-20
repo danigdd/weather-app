@@ -47,7 +47,7 @@ export function renderCityWeather(cityData) {
 
   // SEARCH BAR
   const searchBarWrapperDOM = document.createElement('div');
-  searchBarWrapperDOM.id = 'searchBarWrapper_id';
+  searchBarWrapperDOM.id = 'searchBarWrapperCity_id';
   root.appendChild(searchBarWrapperDOM);
 
   const textAreaDOM = document.createElement('input');

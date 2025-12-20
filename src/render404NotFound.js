@@ -23,7 +23,7 @@ export function render404NotFound(name_not_found) {
 
   // SEARCH BAR
   const searchBarWrapperDOM = document.createElement('div');
-  searchBarWrapperDOM.id = 'searchBarWrapper_id';
+  searchBarWrapperDOM.id = 'searchBarWrapperNotFound_id';
   root.appendChild(searchBarWrapperDOM);
 
   const textAreaDOM = document.createElement('input');
